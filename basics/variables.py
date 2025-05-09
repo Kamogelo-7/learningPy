@@ -40,4 +40,7 @@ if "expensive" not in txt:
 else:
     print(txt)
 
-
+thislist = ["apple", "banana", "cherry"]
+tropical = ["mango", "pineapple", "papaya"]
+thislist.extend(tropical)
+print(thislist)

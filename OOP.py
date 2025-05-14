@@ -1,3 +1,5 @@
+import moduleConcept
+
 # Python is an object oriented programming language.
 # Almost everything in Python is an object, with its properties and methods.
 # A Class is like an object constructor, or a "blueprint" for creating objects
@@ -38,3 +40,32 @@ class Student(Person):
 Student1 = Student(username, userage , enrollmentYear)
 print(Student1.enrolledYear())
 
+# Inheritance Class Polymorphism
+# make a parent class called Vehicle, and make Car, Boat, Plane child classes of Vehicle, the child classes inherits the Vehicle methods, but can override them
+class Vehicle:
+  def __init__(self, brand, model):
+    self.brand = brand
+    self.model = model
+
+  def move(self):
+    print("Move!")
+
+class Car(Vehicle):
+  pass
+
+class Boat(Vehicle):
+  def move(self):
+    print("Sail!")
+
+class Plane(Vehicle):
+  def move(self):
+    print("Fly!")
+
+car1 = Car("Ford", "Mustang")
+boat1 = Boat("Ibiza", "Touring 20")
+plane1 = Plane("Boeing", "747")
+
+for x in (car1, boat1, plane1):
+  print(x.brand)
+  print(x.model)
+  x.move()

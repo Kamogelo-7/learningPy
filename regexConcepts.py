@@ -1,7 +1,6 @@
 import re
 
-txt = "They better stay alive i've seen the end, ooh, ohh"
-text = [x for x in txt if "they" in x]
-reveal = re.findall("^The.alive", text)
+txt = "The rain in spin is pouring"
+result = re.findall("[a-i]", txt)
+print(result)
 
-print(type(reveal))

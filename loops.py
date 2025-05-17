@@ -29,3 +29,4 @@ else:
 txt = "Hello, World!"
 Sliced_Txt = txt[2:5]
 print(Sliced_Txt)
+

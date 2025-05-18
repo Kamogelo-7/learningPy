@@ -1,0 +1,31 @@
+
+Variables:
+Used to store data. Example:
+name = "Alice"
+
+Functions:
+Block of reusable code. Example:
+def greet():
+    print("Hello")
+
+Loops:
+Used for repetition. Example:
+for i in range(3):
+    print(i)
+
+OOP (Object-Oriented Programming):
+A way to model real-world things using classes and objects.
+Example:
+class Dog:
+    def __init__(self, name):
+        self.name = name
+    def bark(self):
+        print(f"{self.name} says woof!")
+
+Error Handling:
+Used to handle runtime errors.
+Example:
+try:
+    x = 10 / 0
+except ZeroDivisionError:
+    print("Cannot divide by zero")

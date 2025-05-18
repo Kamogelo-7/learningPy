@@ -1,8 +1,8 @@
 try:
     # Try to open msg.txt
     res = "msg.txt"
-    with open(res, "r") as file1:
-        msg_content = file1.read()
+    with open(res, "r") as f:
+        msg_content = f.read()
         print("msg.txt content:")
         print(msg_content)
 
